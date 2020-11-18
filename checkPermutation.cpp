@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unordered_map>
 using namespace std;
-
+//Compares two strings and checks if they are permutations 
 bool checkPermutation(string s,string s2){
     if (s == s2) return false;
     unordered_map<char,int> umap;
@@ -18,7 +18,7 @@ bool checkPermutation(string s,string s2){
 
 int main(){
     cout << "checkPermutation" << endl;
-    cout << checkPermutation("aa","aaa") << endl;
+    cout << checkPermutation("racecar","rraceca") << endl;
 
     return 0;
 }

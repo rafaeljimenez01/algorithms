@@ -1,7 +1,7 @@
 #include <iostream>
 #include <unordered_map>
 using namespace std;
-
+//Checks for uniquees chars in a string
 bool isUnique(string s){
     unordered_map<char,int> map;
     map[s[0]] = 0;

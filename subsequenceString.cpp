@@ -8,7 +8,9 @@ s2 = "loslakers"
 
 
 */
-
+#include <iostream>
+#include <string>
+using namespace std;
 bool solve(string s1, string s2) {
     int l1 = s1.size();
     int l2 = s2.size();
@@ -32,4 +34,13 @@ bool solve(string s1, string s2) {
     }
     return confirmed == l1;
     
+}
+
+int main(){
+    string s1 = "bee";
+    string s2 = "hive";
+    cout << solve(s1,s2) << endl;
+
+
+    return 0;
 }
